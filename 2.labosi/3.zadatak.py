@@ -4,7 +4,7 @@ import cv2
 
 
 img = cv2.imread('C:\\Users\\luka2\\PycharmProjects\\pythonProject\\HelloWorld\\tiger.png')
-brig_img = img[:,:,0].copy()
+brig_img = img[:,:,0]
 plt.figure()
 
 #rotiranje
@@ -28,7 +28,5 @@ plt.imshow(flipped_img)
 
 plt.subplot(1,5,4)
 plt.imshow(shrinked_img)
-
-print(img.shape())
 
 plt.show()
